@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development --open"
+    "start": "webpack-dev-server --mode development --open",
+    "eslint": "eslint",
+    "eslint:fix": "eslint --fix"
   },
   "repository": {
     "type": "git",
@@ -28,6 +30,8 @@
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^6.0.3",
     "css-loader": "^4.2.2",
+    "eslint": "^7.7.0",
+    "eslint-loader": "^4.0.2",
     "html-webpack-plugin": "^4.3.0",
     "sass": "^1.26.10",
     "sass-loader": "^10.0.1",

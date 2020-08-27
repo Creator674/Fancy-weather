@@ -1,7 +1,7 @@
-const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const {CleanWebpackPlugin} = require('clean-webpack-plugin')
-const CopyWebpackPlugin = require('copy-webpack-plugin')
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     context: path.resolve(__dirname, 'src'),
@@ -33,6 +33,11 @@ module.exports = {
             {
               test: /\.s[ac]ss$/i,
               use: ['style-loader', 'css-loader', 'sass-loader']
+            },
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                loader: 'eslint-loader',
             }
           ]
     },
