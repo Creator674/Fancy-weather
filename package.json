@@ -1,0 +1,44 @@
+{
+  "name": "fancy-weather",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open",
+    "eslint": "eslint",
+    "eslint:fix": "eslint --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Creator674/Fancy-weather.git"
+  },
+  "keywords": [
+    "weather",
+    "forecast",
+    "creator674"
+  ],
+  "author": "Yaroslav Ryzhkov [Creator674]",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Creator674/Fancy-weather/issues"
+  },
+  "homepage": "https://github.com/Creator674/Fancy-weather#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.0.3",
+    "css-loader": "^4.2.2",
+    "eslint": "^7.7.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-promise": "^4.2.1",
+    "html-webpack-plugin": "^4.3.0",
+    "sass": "^1.26.10",
+    "sass-loader": "^10.0.1",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
